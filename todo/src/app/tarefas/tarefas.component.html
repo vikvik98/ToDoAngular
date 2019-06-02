@@ -1,0 +1,11 @@
+<h2>Tarefas</h2>
+<ul class="tarefas">
+
+    <li *ngFor="let tarefa of tarefas">
+        <a routerLink="/detail/{{tarefa.id}}">
+            <span class="badge">
+                Nome: {{tarefa.nome}}
+            </span> Feito: {{tarefa.porcentagem}}%
+        </a>
+    </li>
+</ul>

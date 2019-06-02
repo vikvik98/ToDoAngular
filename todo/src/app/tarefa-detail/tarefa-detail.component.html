@@ -1,0 +1,11 @@
+<div *ngIf="tarefa">
+
+    <h2>{{tarefa.nome | uppercase}} Detalhes</h2>
+    <div>
+        <span>Descrição: </span> {{tarefa.descricao}}<br>
+        <span>Porcentagem: </span>{{tarefa.porcentagem}}%
+    </div>
+
+    <button (click)="goBack()">go back</button>
+  
+  </div>
